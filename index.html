@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        #drawing {
+            position: relative;
+            margin: 20px auto 10px auto;
+        }
+
+        #controls {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        fieldset {
+            width: 400px;
+        }
+
+        #generateMap {
+            float: right;
+            margin:auto 50px auto auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="drawing" onmousedown="mouseDown(event)" onclick="mouseClick(event)"onmousemove="mouseMove(event)" onmouseup="mouseUp(event)"></canvas>
+
+    <!--<div id="controls">-->
+        <!--<fieldset>-->
+            <!--<label>Block <input type="radio" id="radio1" name="inputType" value="Block" onclick="placeBlock()"> </label>-->
+            <!--<label>Search <input type="radio" id="radio2" name="inputType" value="Search" onclick="placeBlock()" checked="checked"> </label>-->
+            <!--<button id="generateMap" onclick="generateMap()">Generate New Map</button>-->
+        <!--</fieldset>-->
+
+    <!--</div>-->
+
+    <script src="BFS.js"></script>
+    <script src="scene.js"></script>
+</body>
+</html>
