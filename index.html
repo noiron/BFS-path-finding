@@ -6,38 +6,21 @@
 
     <style>
         #drawing {
-            position: relative;
-            margin: 20px auto 10px auto;
+            position: absolute;
+            display: block;
+            margin: 150px auto auto auto;
         }
 
-        #controls {
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        fieldset {
-            width: 400px;
-        }
-
-        #generateMap {
-            float: right;
-            margin:auto 50px auto auto;
-        }
     </style>
 </head>
 <body>
-    <canvas id="drawing" onmousedown="mouseDown(event)" onclick="mouseClick(event)"onmousemove="mouseMove(event)" onmouseup="mouseUp(event)"></canvas>
-
-    <!--<div id="controls">-->
-        <!--<fieldset>-->
-            <!--<label>Block <input type="radio" id="radio1" name="inputType" value="Block" onclick="placeBlock()"> </label>-->
-            <!--<label>Search <input type="radio" id="radio2" name="inputType" value="Search" onclick="placeBlock()" checked="checked"> </label>-->
-            <!--<button id="generateMap" onclick="generateMap()">Generate New Map</button>-->
-        <!--</fieldset>-->
-
-    <!--</div>-->
-
+    <canvas id="drawing" onmousedown="mouseDown(event)" onclick="mouseClick(event)"onmousemove="mouseMove(event)" onmouseup="mouseUp(event)"></canvas
+    <div>
+        <p>This is a <b>Breadth First Search</b> demo.</p>
+        <p>You can drag <span style="color:green">Start point(green)</span> and
+            <span style="color:red">End point(red)</span> to change path.</p>
+        <p>Click and move your mouse to add or remove walls.</p>
+    </div>
     <script src="BFS.js"></script>
     <script src="scene.js"></script>
 </body>
